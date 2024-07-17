@@ -59,6 +59,9 @@ group :development, :test do
 
   # RSpec for Rails 6+
   gem 'rspec-rails', '~> 6.1.0'
+
+  # A runtime developer console and IRB alternative with powerful introspection capabilities.
+  gem 'pry', '~> 0.14.2'
 end
 
 group :development do
