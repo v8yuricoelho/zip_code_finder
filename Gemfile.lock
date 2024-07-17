@@ -91,6 +91,11 @@ GEM
       reline (>= 0.3.8)
     diff-lcs (1.5.1)
     erubi (1.13.0)
+    faraday (2.10.0)
+      faraday-net_http (>= 2.0, < 3.2)
+      logger
+    faraday-net_http (3.1.0)
+      net-http
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.5)
@@ -123,6 +128,8 @@ GEM
     mini_mime (1.1.5)
     minitest (5.24.1)
     msgpack (1.7.2)
+    net-http (0.4.1)
+      uri
     net-imap (0.4.14)
       date
       net-protocol
@@ -254,6 +261,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
+    uri (0.13.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -274,6 +282,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  faraday
   importmap-rails
   jbuilder
   pg (~> 1.1)
