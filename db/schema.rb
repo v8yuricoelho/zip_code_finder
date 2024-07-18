@@ -17,15 +17,15 @@ ActiveRecord::Schema[7.0].define(version: 20_240_718_214_243) do
   enable_extension 'plpgsql'
 
   create_table 'zip_codes', force: :cascade do |t|
-    t.string 'zip_code', null: false
+    t.string 'cep', null: false
     t.string 'address', null: false
     t.string 'district', null: false
     t.string 'state', null: false
     t.string 'city', null: false
     t.string 'ddd', null: false
-    t.integer 'search_count', default: 1, null: false
+    t.integer 'search_count', default: 0, null: false
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
-    t.index ['zip_code'], name: 'index_zip_codes_on_zip_code', unique: true
+    t.index ['cep'], name: 'index_zip_codes_on_cep', unique: true
   end
 end
