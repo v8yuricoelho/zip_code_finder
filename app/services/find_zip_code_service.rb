@@ -7,6 +7,8 @@ class FindZipCodeService
 
   def call
     response = Faraday.get("https://cep.awesomeapi.com.br/json/#{@zip_code}")
-    JSON.parse(response.body)
+    return JSON.parse(response.body) if response.success?
+
+    { 'error_message' => JSON.parse(response.body)['message'] }
   end
 end
