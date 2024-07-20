@@ -10,5 +10,7 @@ class ZipCodesController < ApplicationController
   def index
     @zip_code_result = params[:zip_code_result]
     @top_searched_zip_codes = ZipCode.top_searched
+    @top_searched_zip_codes_by_state = ZipCode.top_searched_by_state
+    @amount_zip_codes_by_state = ZipCode.count_by_state
   end
 end

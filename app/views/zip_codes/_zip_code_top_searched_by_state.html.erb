@@ -1,0 +1,11 @@
+<div class="mt-4 rounded-md border border-gray-600 shadow-sm w-1/2">
+  <h2 class="text-center text-medium font-semibold leading-relaxed tracking-tight">Mais buscados por estado</h2>
+  <ul class="text-center text-sm font-medium">
+    <% @top_searched_zip_codes_by_state.each do |state, zip_code| %>
+      <li class="flex justify-between items-center py-2 px-20">
+        <span><%= state %></span>
+        <span><%= zip_code&.cep || '--' %></span>
+      </li>
+    <% end %>
+  </ul>
+</div>

@@ -1,8 +1,8 @@
-<div class="flex justify-center items-center h-screen">
-  <div class="p-10 rounded shadow-lg">
-    <h1 class="text-center text-2xl font-bold leading-relaxed tracking-tight">ZipCode Finder</h1>
+<div class="flex justify-center items-center min-h-screen">
+  <div class="container mx-auto my-6 md:my-12 p-6 md:p-12 rounded shadow-lg w-full max-w-2xl">
+    <h1 class="text-center text-2xl font-bold tracking-tight">ZipCode Finder</h1>
     <%= form_tag zip_code_path, method: :get do %>
-      <div>
+      <div class="flex justify-center mt-4">
         <%= text_field_tag :zip_code, nil, class: 'block rounded-md border-1 py-1.5 shadow-sm' %>
       </div>
       <div class="text-center mt-4">
@@ -18,6 +18,13 @@
       <% end %>
     <% end %>
 
-    <%= render 'zip_code_top_searched' %>
+    <div class="flex justify-center space-x-4">
+      <%= render 'zip_code_top_searched' %>
+    </div>
+
+    <div class="flex justify-center space-x-4">
+      <%= render 'zip_code_top_searched_by_state' %>
+      <%= render 'amount_zip_codes_by_state' %>
+    </div>
   </div>
 </div>
