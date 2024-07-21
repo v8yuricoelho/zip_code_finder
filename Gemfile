@@ -85,6 +85,9 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
+
+  # Simple one-liner tests for common Rails functionality
+  gem 'shoulda-matchers', '~> 6.0'
 end
 
-gem "tailwindcss-rails", "~> 2.6"
+gem 'tailwindcss-rails', '~> 2.6'
