@@ -88,6 +88,9 @@ group :test do
 
   # Simple one-liner tests for common Rails functionality
   gem 'shoulda-matchers', '~> 6.0'
+
+  # Library for stubbing and setting expectations on HTTP requests in Ruby.
+  gem 'webmock'
 end
 
 gem 'tailwindcss-rails', '~> 2.6'
