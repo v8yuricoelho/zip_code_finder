@@ -7,3 +7,12 @@ Style/Documentation:
 
 Metrics/MethodLength:
   Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/IndexedLet:
+  Enabled: false
