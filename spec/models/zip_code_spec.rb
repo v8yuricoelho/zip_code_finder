@@ -18,7 +18,7 @@ RSpec.describe ZipCode, type: :model do
   let!(:zip_code1) { FactoryBot.create(:zip_code, search_count: 10, state: 'BA') }
   let!(:zip_code2) { FactoryBot.create(:zip_code, search_count: 8, state: 'PE') }
   let!(:zip_code3) { FactoryBot.create(:zip_code, search_count: 5, state: 'SP') }
-  let(:zip_code4) { FactoryBot.create(:zip_code, search_count: 1, state: 'BA') }
+  let!(:zip_code4) { FactoryBot.create(:zip_code, search_count: 1, state: 'BA') }
 
   describe 'validations' do
     it { is_expected.to validate_presence_of(:cep) }
