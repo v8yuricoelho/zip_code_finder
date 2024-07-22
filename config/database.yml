@@ -20,6 +20,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: zip_code_finder
+  password: <%= ENV["ZIP_CODE_FINDER_DATABASE_PASSWORD"] %>
 
 development:
   <<: *default
