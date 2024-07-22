@@ -8,7 +8,7 @@
       * **Tailwind CSS**
 
   * Instructions
-    * First, clone the project using `https://github.com/v8yuricoelho/sistema-caps`;
+    * First, clone the project using `git clone https://github.com/v8yuricoelho/zip_code_finder`;
     * Install project dependencies by running `bundle install` in its folder;
     * Set your PostgreSQL username and password in the `config/database.yml` file;
     * After setting the username and password, create the database with `rails db:create`;
