@@ -1,24 +1,21 @@
-# README
+# ZipCode Finder
+<p align="center">Web application that allows users to input a zip code and retrieve detailed information such as address, state, city, coordinates, and more.</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<!--ts-->
+  * Pre Requisites
+      * **Ruby 3.2.2**.
+      * **PostgreSQL**
+      * **Tailwind CSS**
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  * Instructions
+    * First, clone the project using `https://github.com/v8yuricoelho/sistema-caps`;
+    * Install project dependencies by running `bundle install` in its folder;
+    * Set your PostgreSQL username and password in the `config/database.yml` file;
+    * After setting the username and password, create the database with `rails db:create`;
+    * Run the migrations with `rails db:migrate`;
+    * Install Tailwind CSS with `rails tailwindcss:install`
+      
+  
+  * Tests
+    * Run the tests with `rspec`.
+<!--te-->
