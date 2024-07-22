@@ -37,6 +37,12 @@ RSpec.describe FindZipCodeService do
         end
       end
 
+      it 'saves record on database' do
+        expect do
+          described_class.new(zip_code:).call
+        end.to change(ZipCode, :count).by(1)
+      end
+
       it 'increments the search_count attribute of the ZipCode record' do
         expect do
           described_class.new(zip_code:).call
@@ -60,6 +66,12 @@ RSpec.describe FindZipCodeService do
         result = described_class.new(zip_code:).call
 
         expect(result).to include('error_message' => error_message)
+      end
+
+      it 'does not save record on database' do
+        expect do
+          described_class.new(zip_code:).call
+        end.not_to change(ZipCode, :count)
       end
     end
   end
