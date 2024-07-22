@@ -62,6 +62,11 @@ group :development, :test do
 
   # A runtime developer console and IRB alternative with powerful introspection capabilities.
   gem 'pry', '~> 0.14.2'
+
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
+
+  gem 'factory_bot_rails'
 end
 
 group :development do
