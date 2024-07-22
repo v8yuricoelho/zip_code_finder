@@ -1,8 +1,8 @@
 <div class="mt-4 rounded-md border border-gray-600 shadow-sm w-1/2">
   <h2 class="text-center text-medium font-semibold leading-relaxed tracking-tight">CEPs mais buscados</h2>
   <ul class="text-center text-sm font-medium">
-    <% @top_searched_zip_codes.each do |zip_code| %>
-      <li><%= zip_code.cep %></li>
+    <% 3.times do |index| %>
+      <li><%= @top_searched_zip_codes[index]&.cep || '--' %></li>
     <% end %>
   </ul>
 </div>
