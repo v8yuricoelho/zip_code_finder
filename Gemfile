@@ -91,6 +91,9 @@ group :test do
 
   # Library for stubbing and setting expectations on HTTP requests in Ruby.
   gem 'webmock'
+
+  # Brings back `assigns` and `assert_template` to your Rails tests
+  gem 'rails-controller-testing'
 end
 
 gem 'tailwindcss-rails', '~> 2.6'
